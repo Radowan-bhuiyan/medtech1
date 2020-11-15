@@ -1,0 +1,228 @@
+
+/*******************************
+	All Responsive Code
+*******************************/
+@media  only screen and (min-width: 300px) and (max-width: 1199px) {
+    .belive p br{
+        display: none;
+    }
+    .footer-bottom {
+    margin-top: 10px;
+}
+}
+@media  only screen and (min-width: 992px) and (max-width: 1199px) {
+h3 br, .footer-text p br{
+    display: none;
+}
+
+.resource h3 {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.resource-text a {
+
+     margin-bottom:.5rem; 
+}
+
+}
+
+@media only screen and (min-width:300px) and (max-width:768px) {
+.footer .footer-text {
+     text-align: left;
+}
+.resource  h2{
+    text-align: left;
+}
+.about-img img{
+    display: block;
+}
+.about-img .korr{
+    padding: 10px 0px;
+}
+.join-content h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+
+}
+@media only screen and (min-width:300px) and (max-width:768px) {
+
+
+.mcmh img {
+     height:auto; 
+     max-width: 70%;
+}
+.footer-bottom p {
+    margin-top:20px;
+}
+.left-right{
+    padding-right:9px;
+    padding-left:0px;
+}
+.about-bg h2 {
+
+    font-size: 1.9rem;
+}
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+.hero-content h1 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.hero-content h2 {
+    font-size:2.5rem;
+
+}
+.hero-content img {
+    max-width: 35%;
+    padding-top: 15px;
+}
+
+.belive p, .mission p {
+    font-size: 1.6rem;
+
+}
+.content-space {
+    padding: 2.8rem 0rem;
+}
+.section-padding {
+    padding: 40px 0px;
+}
+h3 br, .footer-text p br{
+    display: none;
+}
+.resource-text {
+    padding: 4px 0px;
+}
+.resource-text a {
+    font-size: 1.6rem;
+    margin-bottom:.5rem;
+}
+.row.resource-p {
+    padding-left: 0px;
+}
+.footer img {
+    max-width: 100%;
+}
+
+.rs{
+    padding-top:15px;
+}
+nav li a {
+    font-size: 1.5rem;
+    margin-left: 7px;
+}
+.nav-link {
+    display: block;
+    padding: .7rem 1rem;
+}
+
+.footer-bottom {
+  padding: 10px 0px;
+
+}
+
+.mission h2 {
+    margin-top:8px;
+
+}
+.left-right{
+    padding-right: 9px;
+    padding-left:0px;
+}
+
+}
+
+@media only screen and (min-width:300px) and (max-width:766px) {
+    .nav-link {
+    display: block;
+    padding: .7rem 1rem;
+}
+    .hero-content h2 {
+    font-size: 2rem;
+}
+.hero-content h1 {
+    font-size:2.6rem;
+}
+nav li a {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-left: 7px;
+}
+.hero-text{
+    padding: 2rem 0rem;
+}
+.resource-text a {
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+.resource-text {
+     padding:0px 0px; 
+}
+.row.resource-p {
+    padding-left: 0px;
+}
+.mcmh h2 {
+
+    font-size: 1.8rem;
+}
+
+.mcmh .korr img {
+   margin:20px 0px;
+}
+
+
+.section-padding {
+     padding:30px 0px; 
+}
+
+
+.footer img {
+    margin-bottom: 5px;
+    margin-top:10px;
+}
+
+.footer  p {
+    font-size: 1.5rem;
+
+}
+
+.footer .footer-text p {
+     margin-top:5px; 
+}
+.footer .footer-text {
+     margin:10px 0px;
+}
+.hero-btn.text-center.rs {
+    margin: 10px 0px;
+}
+h3 br, .footer-text p br{
+    display: none;
+}
+
+}
+
+/* mobile menu */
+@media only screen and (max-width:767px) {
+
+    .navbar .navbar-toggler i {
+        color: #fff
+    }
+
+    .navar .navbar-nav li {
+        text-align: center
+    }
+.resource  h2{
+    text-align: left;
+}
+
+
+}
+@media (min-width: 768px){
+    .navbar-expand-md .navbar-nav .nav-link {
+     padding-right: 0 !important; 
+     padding-left: 0 !important; 
+}
+
+}

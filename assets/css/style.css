@@ -1,0 +1,675 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+  1. Theme Default Css
+  2. Header Menu Css 
+  3. Hero Css
+  4. MCMH Css
+  5. Belive Css
+  6. Mission Css
+  7. Footer Css
+  ----------*/
+
+
+/*
+==========================================
+    Google fonts
+==========================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900|Raleway:300,400,400i,500,500i,600,600i,700,700i,800,900|Sarabun:300,300i,400,400i,500,500i,600,600i,700,700i,800&display=swap');
+
+
+/*
+==========================================
+   1. Theme Default CSS
+==========================================
+*/
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    margin-bottom: 4px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #4c4b4b;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 1px 0px;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #4c4b4b;
+}
+
+a,
+button,
+img,
+input,
+span {
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+a:focus {
+    color: inherit;
+    outline: medium none;
+    transform:none;
+    text-decoration: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+     transform:none;
+     outline:none;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    color: #000;
+    background: #c7e7c0;
+    text-align: center;
+    outline: none;
+    font-size: 1.3rem;
+    border: 1px solid transparent;
+    transition: .3s;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    border-radius: 0px;
+}
+
+
+
+
+.section-padding {
+    padding: 5rem 0px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+.mt-250 {
+    margin-top: -250px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.form-group {
+    margin-bottom: 0rem;
+}
+
+.content-space {
+    padding: 3rem 0rem;
+}
+
+.content-top-space {
+    margin-top: 3.5rem;
+}
+
+
+/*
+==========================================
+     Header Menu Css 
+==========================================
+*/
+
+header {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left:6px;
+}
+
+nav.black {
+    background: #000;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: 1rem;
+}
+nav li a {
+    font-size: 12px;
+    line-height: 12px;
+    color: #0e0f11;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+a.nav-link {
+    display: inline-block;
+}
+
+nav li a:hover,
+nav li a.active {
+    color: #357342;
+}
+
+nav li a:hover,
+nav li a.active {
+    color: #357342;
+}
+
+.navbar.fixed {
+    position: fixed !important;
+    padding: 20px 20px !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    animation: nav-appear;
+    -webkit-animation: nav-appear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+nav i.fa.fa-bars {
+    color: #0e0f11;
+    font-size: 20px;
+}
+
+#site-nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 20px 20px;
+}
+
+#site-nav::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #fff;
+    content: "";
+}
+
+@keyframes nav-appear {
+    0% {
+        top: -100%
+    }
+    25% {
+        top: -75%
+    }
+    75% {
+        top: -25%
+    }
+    100% {
+        top: 0%
+    }
+}
+
+
+/*
+==========================================
+    Hero  Css 
+==========================================
+*/
+
+.hero-img .container,
+.hero-img .row,
+.hero-img .col-md-12 {
+    height: 100%;
+}
+
+.hero-img {
+    background: url(../img/hero1.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.hero-img.first {
+    background: url(../img/hero2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.logo-img{
+    padding-top:4rem;
+}
+.hero-content img {
+    /*max-width: 27%;*/
+    max-width: 220px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 700;
+
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -1px;
+
+}
+.hero-text{
+    /*padding: 3rem 0rem;*/
+    padding: 2.5rem 0rem 3rem;
+}
+.carousel-item .hero-btn {
+    padding-bottom: 3.5rem;
+    padding-top: .5rem;
+}
+
+
+i.fas.fa-arrow-right {
+    font-size: 11px;
+    padding-left: 6px;
+}
+
+
+/*
+==========================================
+    MCMH  Css 
+==========================================
+*/
+
+.mcmh h2 {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin-bottom:1rem;
+}
+
+.mcmh img {
+    padding: 15px;
+}
+
+
+
+/*
+==========================================
+    Belive  Css 
+==========================================
+*/
+
+.belive {
+    background-color: #e0f0fe;
+    width: 100%;
+}
+
+.belive h2,
+.mission h2,
+.resource h2 {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+
+
+.resource h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+/*
+==========================================
+    Mission  Css 
+==========================================
+*/
+.belive p{
+    padding: 8px 0px;
+}
+.belive p,
+.mission p {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 22px;
+}
+
+.mission p {
+    text-align: left;
+}
+.mission h2 {
+    margin-bottom: 15px;
+}
+
+/*
+==========================================
+    Resource  Css 
+==========================================
+*/
+
+.resource h3 {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.resource-p {
+    padding-left: 35px;
+}
+.resource-text a {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    border-bottom: 1px solid #177bff;
+    color: #177bff;
+    display: inline-block;
+    margin-bottom: 3.5rem;
+    margin-top: 2px;
+}
+
+.resource-text {
+    padding: 14px 0px;
+}
+
+.box1 {
+    background: #3d92e8;
+    width: 20%;
+}
+
+.box2 {
+    background: #2057a0;
+    width: 55%;
+}
+
+.box3 {
+    background: #579c54;
+    width: 25%;
+}
+
+.box {
+    height: 6px;
+    float: left;
+}
+
+
+/*
+==========================================
+    
+    Footer  Css 
+==========================================
+*/
+.form-group>label {
+    margin-bottom: 0px;
+    font-size: 11px;
+}
+.footer .footer-text {
+
+    text-align: right;
+}
+.footer .footer-text p {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    color: #252628;
+    line-height: 18px;
+}
+.footer-bottom {
+    margin-top: 8px;
+}
+.footer-bottom p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #4c4b4b;
+     margin-top: -35px;
+
+}
+
+.footer img {
+    /*max-width: 60%;*/
+    max-width: 150px;
+    margin: 30px 0px 0px 0px
+}
+strong a {
+    color: #252628 !important;
+}
+.footer {
+    position: relative;
+}
+
+.footer form{
+    padding: 20px 0px;
+}
+
+/*About css*/
+
+.about #site-nav {
+    padding-top: 13px;
+    padding-bottom: 3px;
+}
+.about-logo img {
+    max-width: 180px;
+}
+.about-bg{
+    background: url(../img/about-bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.about-bg h2{
+    font-family: 'Sarabun', sans-serif;
+    padding-top: 170px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+}
+
+.pt-40{
+    padding-top: 45px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.left-right{
+    padding-right: 89px;
+    padding-left:0px;
+}
+.about-content p{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about-img .korr{
+    padding: 0px 35px;
+}
+.about-content h4{
+    color:#2b673c; 
+}
+
+nav li.nav-item.active a{
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+/*Mission Content*/
+p.ptb-20{
+    padding: 20px 0px;
+}
+.mission-content, .resource-content,
+ .policy-content, .join-content,
+.contact-content {
+    padding-bottom: 35px;
+}
+
+.resource-content h3 a {
+    text-decoration: underline;
+    margin: 10px 0px;
+    padding-left: 25px;
+}
+.resource-content h3 a:before {
+    content: "\2022";
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 15px;
+}
+.resource-tag.pt-20 div{
+    margin: 20px 0px;
+}
+.policy-tag div{
+    margin: 20px 0px;
+}
+.policy-tag h3{
+    padding: 10px 0px;
+}
+.policy-tag h3 strong, .policy-tag a{
+    text-decoration: underline;
+}
+h2 span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+/*.join page*/
+.join-content h3{
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px solid #0088cc;
+    display: inline-block;
+
+}
+
+.join-content a{
+    margin-left: 5px;
+    color:#0088cc;
+    border-bottom: 2px dotted  #0088cc;
+
+}
+.contact-content input{
+    font-size: 1.8rem;
+    height: 43px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 0 !important;
+    padding: 0 10px !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    margin-bottom:10px;
+
+}
+.contact-content label {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+.contact-content textarea {
+
+    font-size: 1.8rem;
+    padding: 9px 10px;
+}
+    
+.contact-content textarea:focus, 
+.contact-content input:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(186, 19, 26, 0.6);
+
+}
+input.submit-btn {
+    font-family: 'Sarabun', sans-serif;
+    width: 112px;
+    background: #0088cc;
+    border:none !important;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+input.submit-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+.contact-content li.email{
+    list-style: disc;
+    font-size: 1.8rem;
+}
+.contact-content li.email a{
+    display: inline-block;
+    color: #0088cc;
+    transition: all 0.3s ease 0s;
+
+}
+ 
+.contact-content li.email a:hover{
+    color: #A00230 !important;
+    outline: 0 !important;
+    text-decoration: underline;
+}
